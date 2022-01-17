@@ -25,7 +25,7 @@ export default function AllAnnouncements({ classId }) {
 
   if (!data.allAnnouncements[0]) {
     return (
-      <Box sx={{ width: "100vw", mt: "50px" }} className="center">
+      <Box sx={{ width: "90vw", mt: "50px" }} className="center">
         <CatSvg />
         <p>You can see the class announcements here</p>
       </Box>
