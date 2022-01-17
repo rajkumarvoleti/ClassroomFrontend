@@ -27,8 +27,8 @@ import Divider from "@mui/material/Divider";
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
-const studentInviteCodes = ["abc", "abc", "abc"];
-const teacherInviteCodes = ["abc", "abc", "abc"];
+const studentInviteCodes = ["k40cv9Q2c", "cTDcNY_2_", "z7gZLTOw5"];
+const teacherInviteCodes = ["0pZicXNZii", "Scf3f6wnuw", "	W2uO--D-D0"];
 
 function ElevationScroll(props) {
   const { children } = props;
@@ -231,8 +231,14 @@ export default function AppBarMenu2({ setMode }) {
                 open={Boolean(anchorElClass)}
                 onClose={handleCloseClassroomMenu}
               >
-                <JoinModal handleMenuClose={handleCloseClassroomMenu} />
-                <CreateModal handleMenuClose={handleCloseClassroomMenu} />
+                <JoinModal
+                  userId={user.id}
+                  handleMenuClose={handleCloseClassroomMenu}
+                />
+                <CreateModal
+                  userId={user.id}
+                  handleMenuClose={handleCloseClassroomMenu}
+                />
               </Menu>
 
               <Tooltip title="Open settings">
