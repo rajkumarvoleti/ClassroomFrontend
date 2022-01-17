@@ -23,7 +23,7 @@ function ListComp({ array }) {
     <List dense>
       {array.map((user) => (
         <>
-          <ListItem sx={{ m: "10px" }}>
+          <ListItem key={user.id} sx={{ m: "10px" }}>
             <ListItemAvatar>
               <Avatar src={user.image} alt={user.name} />
             </ListItemAvatar>

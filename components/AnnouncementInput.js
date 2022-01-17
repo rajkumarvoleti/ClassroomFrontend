@@ -44,6 +44,9 @@ const style2 = {
     alignItems: "center",
     justifyContent: "space-between",
     mt: "10px",
+    ["@media (max-width:780px)"]: {
+      flexDirection: "column",
+    },
   },
 };
 
